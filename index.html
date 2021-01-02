@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PM-5</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+
+<form>
+    <p>Task 1 (Numbers in the range)</p>
+    <label for="num1">Enter the first number: </label><input type="number" id="num1">
+    <label for="num2">Enter the second number: </label><input type="number" id="num2">
+    <button type="button" onclick="alert(numbers(Number(this.form.num1.value), Number(this.form.num2.value)))">OK
+    </button>
+</form>
+
+<form>
+    <p>Task 2 (Degree of x)</p>
+    <label for="a">Enter a number: </label><input type="number" id="a">
+    <label for="b">Enter degree (default 2): </label><input type="number" id="b">
+    <button type="button" onclick="alert(degree(Number(this.form.a.value), Number(this.form.b.value)))">OK</button>
+</form>
+
+<form>
+    <p>Task 3 (a * 0.3, b * 0.3)</p>
+    <label for="num3">Enter the first number: </label><input type="number" id="num3">
+    <label for="num4">Enter the second number: </label><input type="number" id="num4">
+    <button type="button" onclick="alert(math(Number(this.form.num3.value), Number(this.form.num4.value)))">OK</button>
+</form>
+
+<form>
+    <p>Task 4 (Random number)</p>
+    <label for="num5">Enter min number: </label><input type="number" id="num5">
+    <label for="num6">Enter max number: </label><input type="number" id="num6">
+    <button type="button" onclick="alert(random(Number(this.form.num5.value), Number(this.form.num6.value)))">OK
+    </button>
+</form>
+
+<form>
+    <p>Task 5 (Entry indices)</p>
+    <label for="str1">Enter the first string: </label><input id="str1">
+    <label for="str2">Enter the second string: </label><input id="str2">
+    <button type="button" onclick="alert(findStr(this.form.str1.value, this.form.str2.value))">OK</button>
+</form>
+
+<form>
+    <p>Task 6 (Numbers)'PECMAScript 2015 (6th Edition, ECMA-262)'</p>
+    <button type="button" onclick="alert(allNumbers())">OK</button>
+</form>
+
+<form>
+    <p>Task 7 (Uppercase)'PECMAScript 2015 (6th Edition, ECMA-262)'</p>
+    <button type="button" onclick="alert(uppercase())">OK</button>
+</form>
+
+<script src="src/js/tasks.js"></script>
+</body>
+</html>
